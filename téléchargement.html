@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="fr" xml:lang="fr">
+<head>
+    <title>Tableau de bord</title>
+    <link rel="shortcut icon" href="https://campus.ecetech.fr/theme/image.php/igreen/theme/1570599636/favicon" />
+    <meta name="apple-itunes-app" content="app-id=633359593, app-argument=https://campus.ecetech.fr/my/index.php"/><link rel="manifest" href="https://campus.ecetech.fr/admin/tool/mobile/mobile.webmanifest.php" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Tableau de bord" />
+<link rel="stylesheet" type="text/css" href="https://campus.ecetech.fr/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://campus.ecetech.fr/theme/styles.php/igreen/1570599636/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/campus.ecetech.fr","sesskey":"DCTipEHS8d","themerev":"1570599636","slasharguments":1,"theme":"igreen","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1570599636","admin":"admin","svgicons":true,"usertimezone":"Europe\/Paris","contextid":12542};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/campus.ecetech.fr\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/campus.ecetech.fr\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/campus.ecetech.fr\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/campus.ecetech.fr\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/campus.ecetech.fr\/theme\/yui_combo.php?m\/1570599636\/","combine":true,"comboBase":"https:\/\/campus.ecetech.fr\/theme\/yui_combo.php?","ext":false,"root":"m\/1570599636\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader","moodle-core-event"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-qtype_ddimageortext-form":{"requires":["moodle-qtype_ddimageortext-dd","form_filepicker"]},"moodle-qtype_ddimageortext-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-qtype_ddmarker-form":{"requires":["moodle-qtype_ddmarker-dd","form_filepicker","graphics","escape"]},"moodle-qtype_ddmarker-dd":{"requires":["node","event-resize","dd","dd-drop","dd-constrain","graphics"]},"moodle-qtype_ddwtos-dd":{"requires":["node","dd","dd-drop","dd-constrain"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_bigbluebuttonbn-modform":{"requires":["base","node"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/campus.ecetech.fr\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/campus.ecetech.fr\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1570599636\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/campus.ecetech.fr\/lib\/javascript.php\/1570599636\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/campus.ecetech.fr\/lib\/javascript.php\/1570599636\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.1\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body  id="page-my-index" class="format-site  path-my safari dir-ltr lang-fr yui-skin-sam yui3-skin-sam campus-ecetech-fr pagelayout-mydashboard course-1 context-12542 ">
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Passer au contenu principal</a>
+</div><script type="text/javascript" src="https://campus.ecetech.fr/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="https://campus.ecetech.fr/lib/javascript.php/1570599636/lib/javascript-static.js"></script>
+<script type="text/javascript" src="https://campus.ecetech.fr/theme/javascript.php/igreen/1570599636/head"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <header role="banner" class="pos-f-t navbar navbar-full navbar-light bg-faded navbar-static-top moodle-has-zindex">
+    
+        <div class="container-fluid navbar-nav">
+    
+            <div data-region="drawer-toggle">
+                <button aria-expanded="false" aria-controls="nav-drawer" type="button" class="btn pull-xs-left m-r-1 btn-secondary" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><i class="icon fa fa-bars fa-fw " aria-hidden="true"  aria-label=""></i><span class="sr-only">Panneau latéral</span></button>
+            </div>
+    
+            <a href="https://campus.ecetech.fr" class="navbar-brand has-logo
+                    ">
+                    <span class="logo hidden-xs-down">
+                        <img src="https://campus.ecetech.fr/pluginfile.php/1/core_admin/logocompact/0x70/1570599636/ecetech%20logo%20trans.png" alt="ECE TECH">
+                    </span>
+                <span class="site-name hidden-sm-down">ECE TECH</span>
+            </a>
+            <!-- user_menu -->
+            <div class="usermenu"><div class="action-menu moodle-actionmenu nowrap-items" id="action-menu-1" data-enhance="moodle-core-actionmenu">
+
+        <div class="menubar" id="action-menu-1-menubar" role="menubar">
+
+            <div class="dropdown d-inline">
+    <a href="#" class=" dropdown-toggle" id="dropdown-1" title="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="userbutton"><span class="usertext">Dylan LUCHMUN</span><span class="avatars"><span class="avatar current"><img src="https://campus.ecetech.fr/pluginfile.php/12542/user/icon/igreen/f2?rev=17492" alt="Avatar Dylan LUCHMUN" title="Avatar Dylan LUCHMUN" class="userpicture" width="35" height="35" role="presentation" /></span></span></span><b class="caret"></b></a>
+        <div class="dropdown-menu dropdown-menu-right menu  align-tr-br" id="action-menu-1-menu" data-rel="menu-content" aria-labelledby="action-menu-toggle-1" role="menu" data-align="tr-br">
+            <a href="https://campus.ecetech.fr/my/" class="dropdown-item menu-action" role="menuitem" data-title="mymoodle,admin" aria-labelledby="actionmenuaction-1"><i class="icon fa fa-tachometer fa-fw " aria-hidden="true" title="Tableau de bord" aria-label="Tableau de bord"></i><span class="menu-action-text" id="actionmenuaction-1">Tableau de bord</span></a><div class="dropdown-divider"></div><a href="https://campus.ecetech.fr/user/profile.php?id=27733" class="dropdown-item menu-action" role="menuitem" data-title="profile,moodle" aria-labelledby="actionmenuaction-2"><i class="icon fa fa-user fa-fw " aria-hidden="true" title="Profil" aria-label="Profil"></i><span class="menu-action-text" id="actionmenuaction-2">Profil</span></a><a href="https://campus.ecetech.fr/grade/report/overview/index.php" class="dropdown-item menu-action" role="menuitem" data-title="grades,grades" aria-labelledby="actionmenuaction-3"><i class="icon fa fa-table fa-fw " aria-hidden="true" title="Notes" aria-label="Notes"></i><span class="menu-action-text" id="actionmenuaction-3">Notes</span></a><a href="https://campus.ecetech.fr/user/preferences.php" class="dropdown-item menu-action" role="menuitem" data-title="preferences,moodle" aria-labelledby="actionmenuaction-4"><i class="icon fa fa-wrench fa-fw " aria-hidden="true" title="Préférences" aria-label="Préférences"></i><span class="menu-action-text" id="actionmenuaction-4">Préférences</span></a><div class="dropdown-divider"></div><a href="https://campus.ecetech.fr/login/logout.php?sesskey=DCTipEHS8d" class="dropdown-item menu-action" role="menuitem" data-title="logout,moodle" aria-labelledby="actionmenuaction-5"><i class="icon fa fa-sign-out fa-fw " aria-hidden="true" title="Déconnexion" aria-label="Déconnexion"></i><span class="menu-action-text" id="actionmenuaction-5">Déconnexion</span></a>
+        </div>
+</div>
+
+
+        </div>
+
+</div></div>
+    
+            <!-- custom_menu -->
+            <div class="dropdown nav-item pull-xs-right m-r-2">
+            <a class="dropdown-toggle nav-link lang-pix" id="drop-down-5de61ec520cfd5de61ec507f1e12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                fr
+            </a>
+            <div class="dropdown-menu" aria-labelledby="drop-down-5de61ec520cfd5de61ec507f1e12">
+                        <a class="dropdown-item" href="https://campus.ecetech.fr/my/index.php?lang=en" title="English ‎(en)‎">English ‎(en)‎</a>
+                        <a class="dropdown-item" href="https://campus.ecetech.fr/my/index.php?lang=fr" title="Français ‎(fr)‎">Français ‎(fr)‎</a>
+            </div>
+        </div>
+    
+            <!-- navbar_plugin_output -->
+            <div class="popover-region collapsed popover-region-notifications"
+    id="nav-notification-popover-container" data-userid="27733"
+    data-region="popover-region">
+    <div class="popover-region-toggle nav-link"
+        data-region="popover-region-toggle"
+        aria-role="button"
+        aria-controls="popover-region-container-5de61ec5219635de61ec507f1e13"
+        aria-haspopup="true"
+        aria-label="Afficher la fenêtre des notifications sans nouvelle notification"
+        tabindex="0">
+                <i class="icon fa fa-bell fa-fw " aria-hidden="true" title="Ouvrir/fermer le menu notifications" aria-label="Ouvrir/fermer le menu notifications"></i>
+        <div class="count-container hidden" data-region="count-container"></div>
+
+    </div>
+    <div 
+        id="popover-region-container-5de61ec5219635de61ec507f1e13"
+        class="popover-region-container"
+        data-region="popover-region-container"
+        aria-expanded="false"
+        aria-hidden="true"
+        aria-label="Fenêtre de notification"
+        role="region">
+        <div class="popover-region-header-container">
+            <h3 class="popover-region-header-text" data-region="popover-region-header-text">Notifications</h3>
+            <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Tout marquer comme lu"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw " aria-hidden="true" title="Tout marquer comme lu" aria-label="Tout marquer comme lu"></i></span>
+            <span class="loading-icon"><img class="icon " alt="Chargement" title="Chargement" src="https://campus.ecetech.fr/theme/image.php/igreen/core/1570599636/y/loading" /></span>
+        </a>
+        <a href="https://campus.ecetech.fr/message/notificationpreferences.php?userid=27733"
+           title="Préférences de notification">
+            <i class="icon fa fa-cog fa-fw " aria-hidden="true" title="Préférences de notification" aria-label="Préférences de notification"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+            <div class="popover-region-content" data-region="popover-region-content">
+                        <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">Vous n'avez pas de notification</div>
+
+            </div>
+            <span class="loading-icon"><img class="icon " alt="Chargement" title="Chargement" src="https://campus.ecetech.fr/theme/image.php/igreen/core/1570599636/y/loading" /></span>
+        </div>
+                <a class="see-all-link"
+                    href="https://campus.ecetech.fr/message/output/popup/notifications.php">
+                    <div class="popover-region-footer-container">
+                        <div class="popover-region-seeall-text">Tout afficher</div>
+                    </div>
+                </a>
+    </div>
+</div>
+    
+            <!-- search_box -->
+            <span class="hidden-md-down">
+                
+            </span>
+    
+            <nav class="nav navbar-nav hidden-md-down">
+                <!-- page_heading_menu -->
+                
+            </nav>
+        </div>
+    </header>
+    
+
+    <div id="page" class="container-fluid">
+        <header id="page-header" class="row inseec-header bg-base"><div class="col-xs-12"><div class="card"><div class="card-block"><div class="pull-xs-right context-header-settings-menu"></div><div class="pull-xs-left"><a class="my-home-header" href="https://campus.ecetech.fr/my/">Tableau de bord</a></div><div id="course-header"></div></div></div></div></header>
+
+        <div id="page-content" class="row">
+            <div id="region-main-box" class="col-xs-12">
+                <section id="region-main" class="has-blocks">
+                    <div class="card card-block">
+                        <span class="notifications" id="user-notifications"></span>
+                        <div role="main"><span id="maincontent"></span><aside id="block-region-content" class="block-region" data-blockregion="content" data-droptarget="1"><a href="#sb-4" class="sr-only sr-only-focusable">Passer Mes cours</a>
+
+<aside id="inst1791"
+     class=" block block_inseec_course_list  card m-b-1"
+     role="navigation"
+     data-block="inseec_course_list"
+          aria-labelledby="instance-1791-header"
+     >
+
+    <div class="card-block">
+
+
+            <h3 id="instance-1791-header" class="card-title">Mes cours</h3>
+
+        <div class="card-text content">
+            <ul class="unlist"><li class="r0"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECT-INF330" href="https://campus.ecetech.fr/course/view.php?id=595">ECT-INF330 ET3-Green IT</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECT-INF330</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r1"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="HPP-EECETECHP-7899" href="https://campus.ecetech.fr/course/view.php?id=580">HPP-EECETECHP-7899 RENTREE</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">HPP-EECETECHP-78</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r0"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-INF3000-18" href="https://campus.ecetech.fr/course/view.php?id=572">ECTPA-INF3000-18 ET3-SWIFT / Dev iOS S1</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-INF3000-18</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r1"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-INF3000-02" href="https://campus.ecetech.fr/course/view.php?id=571">ECTPA-INF3000-02 ET3-Services web (XML/Ajax) S1</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-INF3000-02</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r0"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-INF3000-22" href="https://campus.ecetech.fr/course/view.php?id=570">ECTPA-INF3000-22 ET3-Sécurité des applis S1</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-INF3000-22</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r1"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-MAT3000-01" href="https://campus.ecetech.fr/course/view.php?id=569">ECTPA-MAT3000-01 ET3-Mathématiques S1</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-MAT3000-01</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r0"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-MNG3000-14" href="https://campus.ecetech.fr/course/view.php?id=554">ECTPA-MNG3000-14 ET3-E-Business</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-MNG3000-14</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r1"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-INF3000-36" href="https://campus.ecetech.fr/course/view.php?id=551">ECTPA-INF3000-36 ET3-Android S1</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-INF3000-36</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r0"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-LFH3000-03" href="https://campus.ecetech.fr/course/view.php?id=550">ECTPA-LFH3000-03 ET3-Communication</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-LFH3000-03</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r1"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-INF3000-03" href="https://campus.ecetech.fr/course/view.php?id=549">ECTPA-INF3000-03 ET3-Méthodes agiles S1</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-INF3000-03</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r0"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-LFH3000-02" href="https://campus.ecetech.fr/course/view.php?id=548">ECTPA-LFH3000-02 ET3-Anglais S1</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-LFH3000-02</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r1"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-INF3000-35" href="https://campus.ecetech.fr/course/view.php?id=547">ECTPA-INF3000-35 ET3-Développement Java S1</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-INF3000-35</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        <img role="presentation" class="icone-assign" title="Dépôt de devoir" src="https://campus.ecetech.fr/theme/image.php/igreen/assign/1570599636/icon" alt="" />
+                        
+                    </div>
+                </div>
+                </div></li>
+<li class="r0"><div class="column c1"><div class='row cb-course-row'>
+                    <div class='col-lg-8 col-md-8 col-xs-7 block-course-longname text-truncate'>
+                        <a class="cb-course" title="ECTPA-INF3000-30" href="https://campus.ecetech.fr/course/view.php?id=546">ECTPA-INF3000-30 ET3-PHP-MySQL/CSS/HTML S1</a>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-2 block-course-shortname text-truncate'>
+                        <span class="course-shortname">ECTPA-INF3000-30</span>
+                    </div>
+                    <div class='col-lg-2 col-md-2 col-xs-3 course-icons text-truncate'>
+                        
+                        
+                    </div>
+                </div>
+                </div></li></ul>
+            <div class="footer"><div class="row">
+                    <div class="col-lg-5 col-md-4 hr-see-all"></div>
+                    <div class="col-lg-2 col-md-4 footer-view-courses down"><a href="https://campus.ecetech.fr/my/index.php?all=0">Réduire</a></div>
+                    <div class="col-lg-5 col-md-4 hr-see-all"></div>
+               </div></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-4"></span></aside></div>
+                        
+                    </div>
+                </section>
+                    <section data-region="blocks-column" class="hidden-print">
+                        <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><a href="#sb-1" class="sr-only sr-only-focusable">Passer Utilisateur connecté</a>
+
+<aside id="inst2388"
+     class=" block block_myprofile  card m-b-1"
+     role="complementary"
+     data-block="myprofile"
+          aria-labelledby="instance-2388-header"
+     >
+
+    <div class="card-block">
+
+
+            <h3 id="instance-2388-header" class="card-title">Utilisateur connecté</h3>
+
+        <div class="card-text content">
+            <div class="myprofileitem picture"><a href="https://campus.ecetech.fr/user/profile.php?id=27733"><img src="https://campus.ecetech.fr/pluginfile.php/12542/user/icon/igreen/f1?rev=17492" alt="Avatar Dylan LUCHMUN" title="Avatar Dylan LUCHMUN" class="profilepicture" width="100" height="100" /></a></div><div class="myprofileitem fullname">Dylan LUCHMUN</div><div class="myprofileitem country">Pays: France</div><div class="myprofileitem city">Ville: PARIS</div><div class="myprofileitem email"><a href="m&#97;&#105;&#108;t&#111;:%64%79l%61%6e.%6cu%63h%6du%6e@%65%64u%2e%65%63e%74e%63%68%2e%66%72">&#100;&#121;&#108;a&#110;&#46;&#108;uc&#104;m&#117;&#110;&#64;&#101;du&#46;&#101;&#99;&#101;&#116;&#101;&#99;h&#46;&#102;&#114;</a></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-1"></span><a href="#sb-2" class="sr-only sr-only-focusable">Passer Calendrier</a>
+
+<aside id="inst2389"
+     class=" block block_calendar_month  card m-b-1"
+     role="complementary"
+     data-block="calendar_month"
+          aria-labelledby="instance-2389-header"
+     >
+
+    <div class="card-block">
+
+
+            <h3 id="instance-2389-header" class="card-title">Calendrier</h3>
+
+        <div class="card-text content">
+            <table class="minicalendar calendartable" summary="Calendrier décembre 2019"><caption><div class="calendar-controls"><a class="arrow_link previous" href="https://campus.ecetech.fr/my/index.php?time=1572562800" title="Mois précédent"><span class="arrow ">&#x25C0;&#xFE0E;</span><span class="accesshide " >&nbsp;<span class="arrow_text">Mois précédent</span></span></a><span class="hide"> | </span><span class="current"><a title="Ce mois" href="https://campus.ecetech.fr/calendar/view.php?view=month&amp;time=1575362245&amp;course=1">décembre 2019</a></span><span class="hide"> | </span><a class="arrow_link next" href="https://campus.ecetech.fr/my/index.php?time=1577833200" title="Mois suivant"><span class="accesshide " ><span class="arrow_text">Mois suivant</span>&nbsp;</span><span class="arrow ">&#x25B6;&#xFE0E;</span></a><span class="clearer"><!-- --></span>
+</div></caption><tr class="weekdays"><th scope="col"><abbr title="Lundi">Lu</abbr></th>
+<th scope="col"><abbr title="Mardi">Ma</abbr></th>
+<th scope="col"><abbr title="Mercredi">Me</abbr></th>
+<th scope="col"><abbr title="Jeudi">Je</abbr></th>
+<th scope="col"><abbr title="Vendredi">Ve</abbr></th>
+<th scope="col"><abbr title="Samedi">Sa</abbr></th>
+<th scope="col"><abbr title="Dimanche">Di</abbr></th>
+</tr><tr><td class="dayblank">&nbsp;</td>
+<td class="dayblank">&nbsp;</td>
+<td class="dayblank">&nbsp;</td>
+<td class="dayblank">&nbsp;</td>
+<td class="dayblank">&nbsp;</td>
+<td class="dayblank">&nbsp;</td>
+<td class="weekend day hasevent calendar_event_course calendar_event_course"><a href="https://campus.ecetech.fr/calendar/view.php?view=day&amp;time=1575154800#event_105"
+    data-container="body"
+    data-toggle="popover"
+    data-html="true"
+    data-trigger="hover"
+    data-placement="top"
+    data-title="Événements du dimanche 1 décembre"
+    data-content="&lt;div&gt;&lt;img class=&quot;icon &quot; alt=&quot;assign&quot; title=&quot;assign&quot; src=&quot;https://campus.ecetech.fr/theme/image.php/igreen/assign/1570599636/icon&quot; /&gt;&lt;a href=&quot;https://campus.ecetech.fr/calendar/view.php?view=day&amp;amp;time=1575154800#event_105&quot;&gt;Évaluation de rattrapage.&lt;/a&gt;&lt;/div&gt;"
+>1</a></td></tr><tr><td class="day">2</td><td class="day today eventnone"><span class="accesshide " >Aujourd'hui mardi 3 décembre </span><a href="#"
+    data-container="body"
+    data-toggle="popover"
+    data-html="true"
+    data-trigger="hover"
+    data-placement="top"
+    data-title="Aujourd&#039;hui mardi 3 décembre"
+    data-content="Pas d&#039;événement"
+>3</a></td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="weekend day">7</td><td class="weekend day">8</td></tr><tr><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="weekend day">14</td><td class="weekend day">15</td></tr><tr><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="weekend day">21</td><td class="weekend day">22</td></tr><tr><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="weekend day">28</td><td class="weekend day">29</td></tr><tr><td class="day">30</td><td class="day">31</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td><td class="dayblank">&nbsp;</td></tr></table>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-2"></span><a href="#sb-3" class="sr-only sr-only-focusable">Passer Utilisateurs en ligne</a>
+
+<aside id="inst2387"
+     class=" block block_online_users  card m-b-1"
+     role="complementary"
+     data-block="online_users"
+          aria-labelledby="instance-2387-header"
+     >
+
+    <div class="card-block">
+
+
+            <h3 id="instance-2387-header" class="card-title">Utilisateurs en ligne</h3>
+
+        <div class="card-text content">
+            <div class="info">(5 dernières minutes: 2)</div><ul class='list'>
+<li class="listentry"><div class="user"><a href="https://campus.ecetech.fr/user/view.php?id=27733&amp;course=1" title="1 s"><img src="https://campus.ecetech.fr/pluginfile.php/12542/user/icon/igreen/f2?rev=17492" alt="" title="" class="userpicture" width="16" height="16" />Dylan LUCHMUN</a></div></li>
+<li class="listentry"><div class="user"><a href="https://campus.ecetech.fr/user/view.php?id=20752&amp;course=1" title="1 min 39 s"><img src="https://campus.ecetech.fr/pluginfile.php/4240/user/icon/igreen/f2?rev=17328" alt="" title="" class="userpicture" width="16" height="16" />Théo ESNAULT</a></div></li>
+</ul><div class="clearer"><!-- --></div>
+            <div class="footer"></div>
+            
+        </div>
+
+    </div>
+
+</aside>
+
+  <span id="sb-3"></span></aside>
+                    </section>
+            </div>
+        </div>
+    </div>
+    <div id="nav-drawer" data-region="drawer" class="hidden-print moodle-has-zindex closed" aria-hidden="true" tabindex="-1">
+        <nav class="list-group">
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action font-weight-bold" href="https://campus.ecetech.fr/my/" data-key="myhome">
+                <div class="m-l-0">
+                        Tableau de bord
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/user/files.php" data-key="privatefiles">
+                <div class="m-l-0">
+                        Fichiers personnels
+                </div>
+            </a>
+        </nav>
+        <nav class="list-group m-t-1">
+            <a class="list-group-item list-group-item-action font-weight-bold" href="https://campus.ecetech.fr/my/" data-key="mycourses">
+                <div class="m-l-0">
+                        Mes cours
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=595" data-key="595">
+                <div class="m-l-1">
+                        ET3-Green IT
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=580" data-key="580">
+                <div class="m-l-1">
+                        RENTREE
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=572" data-key="572">
+                <div class="m-l-1">
+                        ET3-SWIFT / Dev iOS S1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=571" data-key="571">
+                <div class="m-l-1">
+                        ET3-Services web (XML/Ajax) S1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=570" data-key="570">
+                <div class="m-l-1">
+                        ET3-Sécurité des applis S1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=569" data-key="569">
+                <div class="m-l-1">
+                        ET3-Mathématiques S1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=554" data-key="554">
+                <div class="m-l-1">
+                        ET3-E-Business
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=551" data-key="551">
+                <div class="m-l-1">
+                        ET3-Android S1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=550" data-key="550">
+                <div class="m-l-1">
+                        ET3-Communication
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=549" data-key="549">
+                <div class="m-l-1">
+                        ET3-Méthodes agiles S1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=548" data-key="548">
+                <div class="m-l-1">
+                        ET3-Anglais S1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=547" data-key="547">
+                <div class="m-l-1">
+                        ET3-Développement Java S1
+                </div>
+            </a>
+            <a class="list-group-item list-group-item-action " href="https://campus.ecetech.fr/course/view.php?id=546" data-key="546">
+                <div class="m-l-1">
+                        ET3-PHP-MySQL/CSS/HTML S1
+                </div>
+            </a>
+        </nav>
+    </div>
+</div>
+<footer id="page-footer" class="navbar-fixed-bottom p-y-1">
+    <div class="row">
+        <div id="footer-copy" class="col-md-2 col-sm-2">
+            &copy; 2014-2019 <span class="text-bold">INSEEC U</span>
+        </div>
+        <div id="footer-mobile" class="col-md-2 col-sm-2">
+            <div class="row">
+                <div class="col-md-12">
+                    Télécharger les applications mobiles
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="mobileapps">
+                        <ul class="socials list-unstyled">
+                            <li class="d-inline-block m-r-1"><a href="https://itunes.apple.com/fr/app/moodle/id633359593"><i class="fa fa-apple" title="iPhone/iPad (App Store)" aria-label="iPhone/iPad (App Store)"></i></a></li>
+                            <li class="d-inline-block m-r-1"><a href="https://play.google.com/store/apps/details?id=com.moodle.moodlemobile"><i class="fa fa-android" title="Android (Google Play)" aria-label="Android (Google Play)"></i></a></li>
+                            <li class="d-inline-block m-r-1"><a href="http://www.windowsphone.com/en-us/store/app/moodlemobile/d0732b88-3c6d-4127-8f24-3fca2452a4dc"><i class="fa fa-windows" title="Windows Mobile" aria-label="Windows Mobile"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-inseec" class="col-md-4 col-sm-4">
+            <img src="https://campus.ecetech.fr/theme/image.php/igreen/theme/1570599636/logo_inseec_long_bleu" alt="" style="width: 50%;">
+        </div>
+        <div id="legal-footer" class="col-md-4 col-sm-4">
+            <span id="legal-footer-text">Données personnelles et mentions légales</span>
+        </div>
+    </div>
+    <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'https://campus.ecetech.fr/lib/requirejs.php/1570599636/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://campus.ecetech.fr/lib/javascript.php/1570599636/lib/jquery/jquery-3.1.0.min',
+        jqueryui: 'https://campus.ecetech.fr/lib/javascript.php/1570599636/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'https://campus.ecetech.fr/lib/javascript.php/1570599636/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="https://campus.ecetech.fr/lib/javascript.php/1570599636/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "https://campus.ecetech.fr/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage("fr",{
+ "Play": "Lecture",
+ "Pause": "Pause",
+ "Current Time": "Temps actuel",
+ "Duration Time": "Durée",
+ "Remaining Time": "Temps restant",
+ "Stream Type": "Type de flux",
+ "LIVE": "EN DIRECT",
+ "Loaded": "Chargé",
+ "Progress": "Progression",
+ "Fullscreen": "Plein écran",
+ "Non-Fullscreen": "Fenêtré",
+ "Mute": "Sourdine",
+ "Unmute": "Son activé",
+ "Playback Rate": "Vitesse de lecture",
+ "Subtitles": "Sous-titres",
+ "subtitles off": "Sous-titres désactivés",
+ "Captions": "Sous-titres transcrits",
+ "captions off": "Sous-titres transcrits désactivés",
+ "Chapters": "Chapitres",
+ "Close Modal Dialog": "Fermer la boîte de dialogue modale",
+ "Descriptions": "Descriptions",
+ "descriptions off": "descriptions désactivées",
+ "Audio Track": "Piste audio",
+ "You aborted the media playback": "Vous avez interrompu la lecture de la vidéo.",
+ "A network error caused the media download to fail part-way.": "Une erreur de réseau a interrompu le téléchargement de la vidéo.",
+ "The media could not be loaded, either because the server or network failed or because the format is not supported.": "Cette vidéo n'a pas pu être chargée, soit parce que le serveur ou le réseau a échoué ou parce que le format n'est pas reconnu.",
+ "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "La lecture de la vidéo a été interrompue à cause d'un problème de corruption ou parce que la vidéo utilise des fonctionnalités non prises en charge par votre navigateur.",
+ "No compatible source was found for this media.": "Aucune source compatible n'a été trouvée pour cette vidéo.",
+ "The media is encrypted and we do not have the keys to decrypt it.": "Le média est chiffré et nous n'avons pas les clés pour le déchiffrer.",
+ "Play Video": "Lire la vidéo",
+ "Close": "Fermer",
+ "Modal Window": "Fenêtre modale",
+ "This is a modal window": "Ceci est une fenêtre modale",
+ "This modal can be closed by pressing the Escape key or activating the close button.": "Ce modal peut être fermé en appuyant sur la touche Échap ou activer le bouton de fermeture.",
+ ", opens captions settings dialog": ", ouvrir les paramètres des sous-titres transcrits",
+ ", opens subtitles settings dialog": ", ouvrir les paramètres des sous-titres",
+ ", opens descriptions settings dialog": ", ouvrir les paramètres des descriptions",
+ ", selected": ", sélectionné"
+});
+
+    });
+});;
+require(["tool_usertours/usertours"], function(amd) { amd.init("4", false, 12542); });;
+
+require(['jquery'], function($) {
+    $('#single_select5de61ec507f1e11').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f5de61ec507f1e10').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+    require(['theme_boost/loader']);
+    require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+    });
+;
+require(["core/notification"], function(amd) { amd.init(12542, []); });;
+require(["core/log"], function(amd) { amd.setConfig({"level":"warn"}); });
+});
+//]]>
+</script>
+<script type="text/javascript" src="https://campus.ecetech.fr/theme/javascript.php/igreen/1570599636/footer"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Modifi\u00e9 le","name":"Nom","error":"Erreur","info":"Information","yes":"Oui","no":"Non","cancel":"Annuler","confirm":"Confirmer","areyousure":"En \u00eates-vous bien s\u00fbr\u00a0?","closebuttontitle":"Fermer","unknownerror":"Erreur inconnue"},"repository":{"type":"Type","size":"Taille","invalidjson":"Cha\u00eene JSON non valide","nofilesattached":"Aucun fichier joint","filepicker":"S\u00e9lecteur de fichiers","logout":"D\u00e9connexion","nofilesavailable":"Aucun fichier disponible","norepositoriesavailable":"D\u00e9sol\u00e9, aucun de vos d\u00e9p\u00f4ts actuels ne peut retourner de fichiers dans le format requis.","fileexistsdialogheader":"Le fichier existe","fileexistsdialog_editor":"Un fichier de ce nom a d\u00e9j\u00e0 \u00e9t\u00e9 joint au texte que vous modifiez.","fileexistsdialog_filemanager":"Un fichier de ce nom a d\u00e9j\u00e0 \u00e9t\u00e9 joint","renameto":"Renommer \u00e0 \u00ab\u00a0{$a}\u00a0\u00bb","referencesexist":"Ce fichier est utilis\u00e9 comme source par {$a} alias.","select":"S\u00e9lectionnez"},"admin":{"confirmdeletecomments":"Voulez-vous vraiment supprimer des commentaires\u00a0?","confirmation":"Confirmation"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\n\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"fr"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random5de61ec507f1e14'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random5de61ec507f1e14'); });
+})();
+//]]>
+</script>
+
+</footer>
+</body>
+</html>
